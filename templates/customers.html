@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Art Gallery | Customers</title>
+  <style>
+    body{
+      background: url('/static/styles/img/Image5.jpg');
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/customers.css')}}"> 
+</head>
+
+<body>
+  <h1 style="background-color: #ef59a4">CUSTOMERS</h1>
+  <div class="table-container">
+    <div class="table-header">
+      <form action='/gonewcust'>
+        <button class="add-another btn btn-success">Enter New Customer</button>
+      </form>
+      <form action='/godel'>
+        <button class="add-another btn btn-success">Delete Customer</button>
+      </form>
+      <form action='/Home'>
+        <button class="add-another btn btn-success">Home</button>
+        </form>
+    </div>
+    <br>
+    <table class="customer-table table table-hover" style="width:100%" border="1 ">
+      <thead >
+        <tr>
+          <th><h3>Customer Name</h3></th>
+          <th><h3>Customer Username</h3></th>
+          <th><h3>Aadhar Number</h3></th>
+          <th><h3>Email ID</h3></th>
+          <th><h3>Mobile Number</h3></th>
+          <th><h3>Place</h3></th>
+        </tr>
+      </thead>
+      <thead>
+      {% for i in range(z) %}
+        <tr>
+          <td><h3>{{c[i][0]}}</h3></td>
+          <td><h3>{{c[i][1]}}</h3></td>
+          <td><h3>{{c[i][2]}}</h3></td>
+          <td><h3>{{c[i][3]}}</h3></td>
+          <td><h3>{{c[i][4]}}</h3></td>
+          <td><h3>{{c[i][5]}}</h3></td>
+        </tr>
+        {% endfor %}
+      </thead>
+    </table>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+</body>
+
+</html>

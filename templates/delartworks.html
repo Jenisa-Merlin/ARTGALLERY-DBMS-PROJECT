@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Art Gallery | Delete Artworks</title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/newcust.css')}}">
+  <style>
+    body{
+      background: url('/static/styles/img/Image2.jpg');
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "container" >  
+    <form id = "contact" method = "POST" action = "/delartworks">
+      <h3>DELETE ARTWORKS</h3><br>
+      <fieldset>
+        <input placeholder = "Artist ID" type = "text" tabindex = "1" name = 'AID'>
+      </fieldset>
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit">DELETE</button>
+        <p style="color: rgb(235, 111, 150);">{{msg}}</p>
+      </fieldset>
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit"><a href='/artworks' style = 'text-decoration: none;'>ARTWORKS LIST</a></button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

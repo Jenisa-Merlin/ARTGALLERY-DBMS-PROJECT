@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Art Gallery | New Customer</title>
+	<link rel = "stylesheet" type = "text/css" href = "{{url_for('static',filename='styles/newcust.css')}}">
+  <style>
+    body{
+      background: url('/static/styles/img/Image3.jpg');
+    }
+  </style>
+</head>
+
+<body>
+  <div class = "container">  
+    <form id = "contact" method = "POST" action = "/newcustomer">
+      <h3>New Customer Form</h3><br>
+      <fieldset>
+        <input placeholder = "Customer Name" type = "text" tabindex = "1" name = 'cust_name'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Customer ID" type = "text" tabindex = "1" name = 'cust_username'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Set password" type = "text" tabindex = "1" name = 'cust_pwd'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Aadhaar Number" type = "text" tabindex = "1" name = 'aadhaar_num'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Email ID" type = "text" tabindex = "1" name = 'cust_email'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Mobile Number" type = "text" tabindex = "1"  name = 'cust_mobNum'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Place" type = "text" tabindex = "1" name = 'cust_place'>
+      </fieldset>
+   
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit">SUBMIT</button>
+        <p style="color: red;">{{msg}}</p>
+      </fieldset>
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit" ><a href='/customers' style='text-decoration: none;'>CUSTOMERS LIST</a></button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

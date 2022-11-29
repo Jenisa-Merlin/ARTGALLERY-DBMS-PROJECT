@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery | Gallery</title>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/Arts1.css')}}">
+  <style>
+    h1 {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 150px;
+      margin: 0px;
+      padding-top: 20px;
+      text-align: center;
+      font-size: 3em;
+      vertical-align: center;
+      background-color: #727272;
+      color: #FFFFFF;
+    }
+    .images{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    .add-button{
+    float: right;
+    margin-right: 10px;
+    }
+    .btn{
+      text-align : center;
+      width: 100px;
+      height: 100px;
+      margin: auto; 
+    }
+    button{
+      width: 75%;
+      margin: 5px;
+      font-size: 25px;
+      background-color: #bce3f3;
+	    color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="background-color: #030d20f2">ART GALLERY</h1>
+  <br>
+  <h1 style="font: 20px/1 'Open Sans', sans-serif; color:#282936">At The Museum of Modern Art we celebrate creativity, openness, tolerance, and generosity. We aim to be inclusive where diverse cultural, artistic, social, and political positions are welcome. We’re committed to sharing the most thought-provoking modern and contemporary art, and hope you will join us in exploring the art, ideas, and issues of our time.</h1>
+  <div class = "images">
+    <h3>Last Supper</h3>
+    <img src = "/static/styles/img/1.jpeg" alt = "Image 1" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>Tree</h3>
+    <img src = "/static/styles/img/1.png" alt = "Image 2" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>Flower</h3>
+    <img src = "/static/styles/img/2.jpg" alt = "Image 3" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>Sun and Snow</h3>
+    <img src = "/static/styles/img/3.jpeg" alt = "Image 4" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>A Gurl</h3>
+    <img src = "/static/styles/img/4.jpeg" alt = "Image 5" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>Footprint</h3>
+    <img src = "/static/styles/img/5.jpeg" alt = "Image 6" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>Guernica Gernikara</h3>
+    <img src = "/static/styles/img/arts.jpg" alt = "Image 7" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>Plain</h3>
+    <img src = "/static/styles/img/back.jpg" alt = "Image 8" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class = "images">
+    <h3>Monalisa</h3>
+    <img src = "/static/styles/img/Monalisa.jpg" alt = "Image 9" width = "393" height = "313">
+  </div>
+  <br><br>
+  <div class="table-container">
+    <div class="table-header">
+      <form action='/Home'>
+        <button class="add-another btn btn-success">Home</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body{
+      background: url('/static/styles/img/Image7.jpg');
+    }
+  </style>
+	<title>Art Gallery | New Artist</title>
+	<link rel = "stylesheet" type = "text/css" href = "{{url_for('static',filename='styles/newcust.css')}}">
+</head>
+
+<body>
+  <div class = "container">  
+    <form id = "contact" method = "POST" action = "/newartist">
+      <h3>New Artist Form</h3><br>
+      <fieldset>
+        <input placeholder = "Artist Name" type = "text" tabindex = "1" name = 'artist_name'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Artist ID" type = "text" tabindex = "1" name = 'artist_username'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Set password" type = "text" tabindex = "1" name = 'artist_pwd'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Artist DoB" type = "date" tabindex = "1" name = 'artist_dob'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Artist style" type = "text" tabindex = "1" name = 'artist_style'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Aadhaar Number" type = "text" tabindex = "1" name = 'aadhaar_num'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Email ID" type = "text" tabindex = "1" name = 'artist_email'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Mobile Number" type = "text" tabindex = "1"  name = 'artist_mobNum'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Place" type = "text" tabindex = "1" name = 'artist_place'>
+      </fieldset>
+   
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit">SUBMIT</button>
+        <p style="color: red;">{{msg}}</p>
+      </fieldset>
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit" ><a href='/artist' style='text-decoration: none;'>ARTIST LIST</a></button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>

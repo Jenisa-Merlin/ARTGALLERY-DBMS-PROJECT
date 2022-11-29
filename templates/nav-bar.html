@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Art Gallery | Home</title>
+  <link rel = "stylesheet" type = "text/css" href = "{{url_for('static',filename='styles/nav-bar.css')}}"> 
+	<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    .btn{
+      text-align : center;
+      width: 300px;
+      height: 300px;
+      margin: auto; 
+    }
+    button{
+      width: 100%;
+      margin: 5px;
+      font-size: 25px;
+      background-color: #11b1f0;
+	    color: #ffffff;
+    }
+    ul {
+      width: 300px;
+      height: 70px;
+      border: 1px solid white;
+      background: #282936;
+      opacity: 0.5;
+      border-radius: 10px;
+      margin: 30px auto;
+    }
+    </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="/gallery"><abbr title="Gallery"><span class="fas fa-image"></abbr></span></a></li>
+    <li><a href="/customers"><abbr title="Customer"><span class="fas fa-user"></abbr></span></a></li>
+    <li><a href="/artworks"><abbr title="Artworks"><span class="fas fa-paint-brush"></abbr></span></a></li>
+    <li><a href="/artist"><abbr title="Artists"><span class="fas fa-male"></abbr></span></a></li>
+    <li><a href="/orders"><abbr title="Orders"><span class="fas fa-shopping-cart"></abbr></span></a></li>
+  </ul>
+  <br><br>
+  <div class = "btn">
+    <button><a type = "button" style = "position:relative; text-align:center;" href = "/logout">LOGOUT</a></button><br><br>
+  </div>
+  <p style="position: absolute; bottom:2px; right:2px;">&copy; Jenisa Merlin D </p>
+  <p style="position: absolute; bottom:2px; Left:2px;">Reach us jeni.artworks@gmail.com</p>
+</body>
+
+</html>

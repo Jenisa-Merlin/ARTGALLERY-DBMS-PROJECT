@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Art Gallery | New Orders</title>
+  <style>
+    body{
+      background: url('/static/styles/img/Image6.jpg');
+    }
+  </style>
+	<link rel = "stylesheet" type = "text/css" href = "{{url_for('static',filename='styles/newcust.css')}}">
+</head>
+
+<body>
+  <div class = "container">  
+    <form id = "contact" method = "POST" action = "/neworders">
+      <h3>New Orders Form</h3><br>
+      <fieldset>
+        <input placeholder = "Customer Name" type = "text" tabindex = "1" name = 'cust_name'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Art ID" type = "text" tabindex = "1" name = 'art_id'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Order Number" type = "text" tabindex = "1" name = 'order_num'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Order Date" type = "date" tabindex = "1" name = 'order_date'>
+      </fieldset>
+      <fieldset>
+        <input placeholder = "Order Payment" type = "text" tabindex = "1" name = 'order_pay'>
+      </fieldset>
+   
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit">SUBMIT</button>
+        <p style="color: red;">{{msg}}</p>
+      </fieldset>
+      <fieldset>
+        <button name = "submit" type = "submit" id = "contact-submit" ><a href='/orders' style='text-decoration: none;'>ORDERS LIST</a></button>
+      </fieldset>
+    </form>
+  </div>
+</body>
+
+</html>
